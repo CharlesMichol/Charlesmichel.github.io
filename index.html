@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Michael D Farinas - Personal Website</title>
+    <!-- Add the following link to include Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Add this to your existing styles or replace existing #welcome styles */
+        #welcome {
+            text-align: center;
+            padding: 50px 20px;
+            display: block; /* Set the home section to display initially */
+            background: linear-gradient(rgba(59, 89, 152, 0.9), rgba(59, 89, 152, 0.6)),
+                        url('https://images.app.goo.gl/iFAZbk9jj4ctn16p8');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .welcome-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #3b5998;
+            color: white;
+            font-weight: bold;
+        }
+
+        .header-left,
+        .header-center,
+        .header-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-center {
+            margin-left: auto; /* Move the center to the right */
+        }
+
+        .header-right {
+            margin-left: auto; /* Move the right to the right */
+        }
+
+        .header-left a,
+        .header-center a,
+        .header-right a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px; /* Add margin for spacing */
+        }
+
+        .header-left a:hover,
+        .header-center a:hover,
+        .header-right a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 20px 0;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+            transition: transform 0.3s ease-in-out; /* Add animation transition */
+        }
+
+        /* ... (rest of your existing styles) */
+    </style>
+</head>
+
+<body>
+
+    <!-- Header with Home, Profile, and Project links -->
+    <header>
+        <div class="header-left">
+            <div id="home-button" onclick="toggleSection('welcome')">Home</div>
+        </div>
+        <div class="header-center">
+            <div class="profile-header" onclick="toggleProfile()">
+                <a href="#">Profile</a>
+            </div>
+        </div>
+        <div class="header-right">
+            <a href="#" onclick="toggleSection('project')">Project</a>
+        </div>
+    </header>
+
+    <!-- Welcome Message -->
+    <section id="welcome">
+        <div class="welcome-container">
+            <h1>Welcome to My Personal Space</h1>
+            <p>Explore my projects, get to know me, and enjoy the journey!</p>
+        </div>
+    </section>
+
+    <!-- Your face and personal information section -->
+    <section id="profile"
+        style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display: none; transition: transform 0.3s ease-in-out; background-image: url('https://images.app.goo.gl/iFAZbk9jj4ctn16p8'); background-size: cover; background-position: center;">
+        <!-- ... (rest of your existing profile section) -->
+    </section>
+
+    <!-- Project section -->
+    <section id="project">
+        <!-- ... (rest of your existing project section) -->
+    </section>
+
+    <script>
+        // ... (rest of your existing script)
+    </script>
+
+</body>
+
+</html>
